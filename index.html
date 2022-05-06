@@ -8,6 +8,9 @@
   <title>PELIO</title>
   <link rel="shortcut icon" href="public/img/logo.png">
 
+  <!-- jquery link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- data feather icons link -->
   <script src="https://unpkg.com/feather-icons"></script>
 
@@ -44,12 +47,57 @@
           </div>
         </div>
       </div>
-      <div class="panel__right"></div>
+      <div class="panel__right">
+        <div class="right__header">
+          <div class="header__dashboard">
+            <div class="dashboard__photo">
+              <div class="photo__row">
+                <div class="row__rectangle"></div>
+                <div class="row__rectangle"></div>
+              </div>
+              <div class="photo__row">
+                <div class="row__rectangle"></div>
+                <div class="row__rectangle"></div>
+              </div>
+            </div>
+            <h1 class="dashboard">dashboard</h1>
+          </div>
+          <div class="header__search">
+            <input type="text" class="search__input" placeholder="search here...">
+            <i class="search__icon" data-feather="search"></i>
+          </div>
+          <div class="header__profile">
+            <div class="profile__notifications">
+              <i class="notifications__icon" data-feather="bell"></i>
+              <div class="notifications__number">5</div>
+            </div>
+            <div class="profile__new-messages">
+              <i class="message__icon" data-feather="mail"></i>
+              <div class="message__number">23</div>
+            </div>
+            <div class="profile__github">
+              <a href="https://github.com/yuriy-kulakovskyi" target="_blank">
+                <div class="github__image" id="github__image"></div>
+              </a>
+              <div class="github__name">
+                <div class="name__username" id="name__username"></div>
+                <div class="name__nickname" id="name__nickname"></div>
+              </div>
+            </div>
+            <div class="profile__switch">
+              <i data-feather="triangle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
   <!-- wrapper end -->
 
   <!-- js link -->
   <script src="public/js/main.js"></script>
+
+  <!-- parse github account -->
+  <script src="public/js/parseGit.js"></script>
 </body>
 </html>
