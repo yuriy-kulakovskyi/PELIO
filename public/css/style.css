@@ -619,7 +619,345 @@
   background-color: #FF684D;
 }
 
-.wrapper .wrapper__admin__panel .panel__right .right__content .other__content {
-  height: 60%;
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main {
+  width: 100%;
+  height: 597px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .title {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 24px;
+  color: #171B1E;
+  text-transform: capitalize;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions {
+  width: 1097px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 40px;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link {
+  width: 240px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link .link__block {
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link .blue {
+  background-color: #0E6EFF;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link .yellow {
+  background-color: #FFBF26;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link .green {
+  background-color: #00D171;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link .red {
+  background-color: #FF684D;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link .link__col {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-left: 15px;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link .link__col .col__code {
+  color: #0E6EFF;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link .link__col .active {
+  color: #01BEFF;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__link .link__col .col__website {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #171B1E;
+  text-decoration: none;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__amount {
+  width: 146px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__amount .amount__square {
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+  opacity: .2;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__amount svg {
+  position: relative;
+  right: 30px;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__amount .amount__col {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__amount .amount__col .col__title {
+  text-transform: capitalize;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #72757A;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__amount .amount__col .col__length {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 13.6px;
+  color: #171B1E;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__published .published__time {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #72757A;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__buttons {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__buttons .buttons__button {
+  color: #A9AFB8;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__buttons .printer {
+  width: 26px;
+  height: 26px;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__buttons .three__points {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__buttons .three__points .point {
+  width: 6px;
+  height: 6px;
+  background-color: #A9AFB8;
+  border-radius: 100%;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__footer {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__footer .footer__info {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #72757A;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__footer .footer__info .strong {
+  color: #000;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__footer .footer__buttons {
+  width: 344px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__footer .footer__buttons .button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #a2a2a2;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #72757A;
+  cursor: pointer;
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__footer .footer__buttons .button:hover {
+  border: none;
+  -webkit-box-shadow: 0 7px 15px #0E6EFF;
+          box-shadow: 0 7px 15px #0E6EFF;
+  color: #fff;
+  background-color: #0E6EFF;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__footer .footer__buttons .active {
+  border: none;
+  -webkit-box-shadow: 0 7px 15px #0E6EFF;
+          box-shadow: 0 7px 15px #0E6EFF;
+  color: #fff;
+  background-color: #0E6EFF;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__statistics {
+  width: 340px;
+  height: 100%;
+  padding: 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__statistics .statistics__title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #171B1E;
+  text-transform: capitalize;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions,
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__statistics {
+  border-radius: 20px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
