@@ -831,6 +831,7 @@
 .wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__buttons .printer {
   width: 26px;
   height: 26px;
+  cursor: pointer;
 }
 
 .wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions .transactions__row .row__buttons .three__points {
@@ -953,6 +954,20 @@
   font-size: 24px;
   color: #171B1E;
   text-transform: capitalize;
+}
+
+.wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__statistics .chart__block {
+  width: 350px;
+  height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper .wrapper__admin__panel .panel__right .right__content .content__main .main__transactions,

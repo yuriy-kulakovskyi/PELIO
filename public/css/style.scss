@@ -566,6 +566,7 @@
 
                 .printer {
                   width: 26px; height: 26px;
+                  cursor: pointer;
                 }
 
                 .three__points {
@@ -654,6 +655,13 @@
               font-size: 24px;
               color: #171B1E;
               text-transform: capitalize;
+            }
+
+            .chart__block {
+              width: 350px; height: 1200px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
             }
           }
 
