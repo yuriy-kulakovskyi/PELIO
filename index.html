@@ -307,6 +307,121 @@
               </div>
             </div>
           </div>
+          <div class="content__footer">
+            <div class="footer__left">
+              <div class="left__card">
+                <div class="card__header">
+                  <h1 class="header__title">balance</h1>
+                  <div class="header__row">
+                    <h3 class="row__balance">$ 4,929</h3>
+                    <div class="row__right">
+                      <div class="right__quartet">
+                        <i class="point" data-feather="circle"></i>
+                        <i class="point" data-feather="circle"></i>
+                        <i class="point" data-feather="circle"></i>
+                        <i class="point" data-feather="circle"></i>
+                      </div>
+                      <div class="right__quartet">
+                        <i class="point" data-feather="circle"></i>
+                        <i class="point" data-feather="circle"></i>
+                        <i class="point" data-feather="circle"></i>
+                        <i class="point" data-feather="circle"></i>
+                      </div>
+                      <div class="right__quartet">
+                        <i class="point" data-feather="circle"></i>
+                        <i class="point" data-feather="circle"></i>
+                        <i class="point" data-feather="circle"></i>
+                        <i class="point" data-feather="circle"></i>
+                      </div>
+                      <div class="right__quartet">3456</div>
+                    </div>
+                  </div>
+                  <div class="header__circle circle1"></div>
+                  <div class="header__circle circle2"></div>
+                </div>
+                <div class="card__footer">
+                  <div class="footer__left">
+                    <div class="left__date left-block">
+                      <h4 class="date__title title">valid thru</h4>
+                      <p class="date__info info">03/23</p>
+                    </div>
+                    <div class="left__name left-block">
+                      <h4 class="name__title title">name</h4>
+                      <p class="name__info info" id="name"></p>
+                    </div>
+                  </div>
+                  <div class="footer__right__circles">
+                    <div class="right__circle moving"></div>
+                    <div class="right__circle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="left__transactions">
+                <div class="transactions__container">
+                  <h1 class="container__title">transactions</h1>
+                  <p class="container__number">5,793</p>
+                </div>
+                <div class="transactions__graphic">
+                  <canvas id="lineChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="footer__middle">
+              <h1 class="middle__title">balance details</h1>
+              <div class="middle__content">
+                <div class="content__total">
+                  <p class="total__title">total balance</p>
+                  <h3 class="total__info">$ 221,478</h3>
+                </div>
+                <div class="content__cards">
+                  <div class="cards__row">
+                    <div class="row__card active">
+                      <h1 class="card__title">last month</h1>
+                      <h3 class="card__score">$ 14,849</h3>
+                    </div>
+                    <div class="row__card">
+                      <h1 class="card__title">expenses</h1>
+                      <h3 class="card__score">$ 14,849</h3>
+                    </div>
+                  </div>
+                  <div class="cards__row">
+                    <div class="row__card">
+                      <h1 class="card__title">taxes</h1>
+                      <h3 class="card__score">$255.25</h3>
+                    </div>
+                    <div class="row__card">
+                      <h1 class="card__title">debt</h1>
+                      <h3 class="card__score">$365,478</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="right__header">
+                <h1 class="header__title">activity</h1>
+                <p class="header__info">$ 48,284</p>
+              </div>
+              <div class="right__main">
+                <div class="main__left">
+                  <div class="left__column green">
+                    <div class="column__fill fill__green"></div>
+                  </div>
+                  <div class="left__column red">
+                    <div class="column__fill fill__red"></div>
+                  </div>
+                  <div class="left__column blue">
+                    <div class="column__fill fill__blue"></div>
+                  </div>
+                </div>
+                <div class="main__right">
+                  <div class="right__line green"></div>
+                  <div class="right__line red"></div>
+                  <div class="right__line blue"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -315,6 +430,10 @@
 
   <!-- js link -->
   <script src="public/js/main.js"></script>
+
+  <!-- charts links -->
+  <script src="public/js/firstChart.js"></script>
+  <script src="public/js/secondChart.js"></script>
 
   <!-- activate feather icons -->
   <script src="public/js/activate-feather.js"></script>
