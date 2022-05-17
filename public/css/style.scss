@@ -17,9 +17,10 @@
   .wrapper__admin__panel {
     width: 1920px; height: 1496px;
     margin: 0 auto;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    --scale: 0;
 
     .panel__left {
       width: 20%; height: 100%;
