@@ -50,8 +50,6 @@ form {
   --accent: #fff;
 }
 .wrapper__admin__panel {
-  position: fixed;
-  top: 0; left: 0;
   transform: scale(var(--scale));
   transition: transform calc(var(--transition, 0.2) * 1s) ease;
 }

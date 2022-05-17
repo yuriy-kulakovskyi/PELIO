@@ -69,9 +69,6 @@ form {
 }
 
 .wrapper__admin__panel {
-  position: fixed;
-  top: 0;
-  left: 0;
   -webkit-transform: scale(var(--scale));
           transform: scale(var(--scale));
   -webkit-transition: -webkit-transform calc(var(--transition, 0.2) * 1s) ease;
