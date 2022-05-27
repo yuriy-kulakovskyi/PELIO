@@ -1,0 +1,303 @@
+.wrapper .profile__switch .switch__menu {
+  width: 295px;
+  min-height: 40px;
+  position: absolute;
+  top: 90px;
+  left: 209vh;
+  -webkit-box-shadow: 0 0 3px #333;
+          box-shadow: 0 0 3px #333;
+  border-radius: 7px;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.wrapper .profile__switch .switch__menu .switch__menu__item {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+}
+
+.wrapper .profile__switch .switch__menu .switch__menu__item svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.wrapper .profile__switch .switch__menu .switch__menu__item .item__title {
+  text-transform: capitalize;
+  color: #72757A;
+  margin-left: 10px;
+}
+
+.wrapper .profile__switch .switch__menu .switch__menu__item:hover {
+  background-color: #0e6eff;
+}
+
+.wrapper .profile__switch .switch__menu .switch__menu__item:hover .item__title {
+  color: #fff;
+}
+
+.authPage {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.authPage .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.authPage .container .header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  background-color: #f1f7fe;
+}
+
+.authPage .container .header .logo__name {
+  color: #0E6EFF;
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-left: 16.42px;
+}
+
+.authPage .container .main {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-y: hidden;
+  background: #dde5f4;
+}
+
+.authPage .container .main * {
+  font-family: 'Poppins';
+}
+
+.authPage .container .main .signIn {
+  background: #f1f7fe;
+  padding: 2em;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 2em #e6e9f9;
+          box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
+}
+
+.authPage .container .main .signIn .logo {
+  margin-top: -3em;
+}
+
+.authPage .container .main .signIn .email {
+  background: white;
+  -webkit-box-shadow: 0 0 2em #e8ebfa;
+          box-shadow: 0 0 2em #e8ebfa;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: -3em;
+}
+
+.authPage .container .main .signIn .email input {
+  outline: none;
+  border: none;
+}
+
+.authPage .container .main .signIn .email input::-webkit-input-placeholder {
+  color: #333;
+  font-size: 0.9em;
+  opacity: .3;
+}
+
+.authPage .container .main .signIn .email input:-ms-input-placeholder {
+  color: #333;
+  font-size: 0.9em;
+  opacity: .3;
+}
+
+.authPage .container .main .signIn .email input::-ms-input-placeholder {
+  color: #333;
+  font-size: 0.9em;
+  opacity: .3;
+}
+
+.authPage .container .main .signIn .email input::placeholder {
+  color: #333;
+  font-size: 0.9em;
+  opacity: .3;
+}
+
+.authPage .container .main .signIn .email ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -.2em;
+}
+
+.authPage .container .main .signIn .password {
+  background: white;
+  -webkit-box-shadow: 0 0 2em #e6e9f9;
+          box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+}
+
+.authPage .container .main .signIn .password input {
+  outline: none;
+  border: none;
+}
+
+.authPage .container .main .signIn .password input::-webkit-input-placeholder {
+  color: #333;
+  font-size: 0.9em;
+  opacity: .3;
+}
+
+.authPage .container .main .signIn .password input:-ms-input-placeholder {
+  color: #333;
+  font-size: 0.9em;
+  opacity: .3;
+}
+
+.authPage .container .main .signIn .password input::-ms-input-placeholder {
+  color: #333;
+  font-size: 0.9em;
+  opacity: .3;
+}
+
+.authPage .container .main .signIn .password input::placeholder {
+  color: #333;
+  font-size: 0.9em;
+  opacity: .3;
+}
+
+.authPage .container .main .signIn .password ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -.2em;
+}
+
+.authPage .container .main .signIn .password .show-hide {
+  margin-right: -5em;
+}
+
+.authPage .container .main .signIn .login {
+  padding: 1em;
+  background: #3e4684;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+}
+
+.authPage .container .main .signIn .login:hover {
+  background-color: #fff;
+  color: #3e4684;
+  border: 1px solid #3e4684;
+}
+
+.authPage .container .main .signIn .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.7em;
+  color: #5e5e5e;
+  gap: 14em;
+  padding-bottom: 10em;
+}
+
+.authPage .container .main .signIn .footer span {
+  cursor: pointer;
+}
+
+.authPage .container .main .signIn .footer span:hover {
+  color: #0e6eff;
+}
+
+.authPage .container .main button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=login.css.map */

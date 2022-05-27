@@ -9,6 +9,9 @@
   <title>PELIO</title>
   <link rel="shortcut icon" href="public/img/logo.png">
 
+  <!-- font awesome link -->
+  <script src="https://kit.fontawesome.com/657ceb94fb.js" crossorigin="anonymous"></script>
+
   <!-- chart.js link -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -25,16 +28,30 @@
 
   <!-- auth css link -->
   <link rel="stylesheet" href="public/css/auth.css">
+
+  <!-- register css link -->
+  <link rel="stylesheet" href="public/css/register.css">
+
+  <!-- login css link -->
+  <link rel="stylesheet" href="public/css/login.css">
+
+  <!-- Git Auth css -->
+  <link rel="stylesheet" href="public/css/gitAuth.css">
 </head>
 
 <body>
+  <div class="git__auth" id="git__auth">
+    <input type="text" class="git__nick" id="git__nick">
+    <button class="auth__btn" id="confirm"><span>confirm</span></button>
+    <i class="cross" id="cross" data-feather="x-circle"></i>
+  </div>
   <!-- wrapper start -->
   <div class="wrapper" id="wrapper">
     <section class="wrapper__auth-form" id="wrapper__auth-form">
       <form onsubmit="return false;"><label for="password">Password</label>
         <input id="password" type="password" pattern="admin" placeholder="Enter your password" required="required" />
         <input id="login" type="checkbox" />
-          <label class="login-button" for="login" id="enter__button"><span>Enter</span><svg>
+        <label class="login-button" for="login" id="enter__button"><span>Enter</span><svg>
             <path
               d="M10,17V14H3V10H10V7L15,12L10,17M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V16H7V20H17V4H7V8H5V4A2,2 0 0,1 7,2Z">
             </path>
@@ -54,12 +71,9 @@
             </div>
           </div>
         </div>
-        <!-- <div class="app">
-          <h1>You logged in! 🎉</h1><button class="logout-button" type="reset">Logout</button>
-        </div><span class="logout-message">You have logged out.</span> -->
       </form>
     </section>
-    <section class="wrapper__admin__panel">
+    <section class="wrapper__admin__panel" id="admin__panel">
       <div class="panel__left">
         <div class="left__content">
           <div class="content__logo">
@@ -119,7 +133,7 @@
               <div class="message__number">23</div>
             </div>
             <div class="profile__github">
-              <a href="https://github.com/yuriy-kulakovskyi" target="_blank">
+              <a id="git__link" target="_blank">
                 <div class="github__image" id="github__image"></div>
               </a>
               <div class="github__name">
@@ -127,8 +141,14 @@
                 <div class="name__nickname" id="name__nickname"></div>
               </div>
             </div>
-            <div class="profile__switch">
-              <i data-feather="triangle"></i>
+            <div class="profile__switch" id="profile__switch">
+              <i data-feather="triangle" id="switcher"></i>
+              <div class="switch__menu" id="switch__menu">
+                <div class="switch__menu__item switch__account" id="switch__account">
+                  <i data-feather="repeat" class="account__icon"></i>
+                  <h3 class="item__title">switch account</h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -531,6 +551,107 @@
     </section>
   </div>
   <!-- wrapper end -->
+  <!-- Auth Page wrapper start -->
+  <div class="authPage" id="authPage">
+    <div class="container">
+      <div class="header">
+        <img src="public/img/logo.png" alt="logo image">
+        <span class="logo__name">pelio</span>
+      </div>
+      <div class="main">
+        <div class="signIn" id="signIn">
+          <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="300" height="300" viewbox="0 0 640 480" xml:space="preserve">
+            <g transform="matrix(3.31 0 0 3.31 320.4 240.4)">
+              <circle style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(61,71,133); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="40"></circle>
+            </g>
+            <g transform="matrix(0.98 0 0 0.98 268.7 213.7)">
+              <circle style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="40"></circle>
+            </g>
+            <g transform="matrix(1.01 0 0 1.01 362.9 210.9)">
+              <circle style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="40"></circle>
+            </g>
+            <g transform="matrix(0.92 0 0 0.92 318.5 286.5)">
+              <circle style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="40"></circle>
+            </g>
+            <g transform="matrix(0.16 -0.12 0.49 0.66 290.57 243.57)">
+              <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" points="-50,-50 -50,50 50,50 50,-50 "></polygon>
+            </g>
+            <g transform="matrix(0.16 0.1 -0.44 0.69 342.03 248.34)">
+              <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" points="-50,-50 -50,50 50,50 50,-50 "></polygon>
+            </g>
+          </svg>
+          <div class="email">
+            <label for="email">Username</label>
+            <div class="sec-2">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" id="loginUsername" placeholder="Username"/>
+            </div>
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <div class="sec-2">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input class="pas" type="password" id="loginPassword" placeholder="Password..."/>
+              <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+            </div>
+          </div>
+          <button class="login" id="loginBtn">Login </button>
+          <div class="footer"><span id="signUpBtn">Sign up</span><span id="gitSignIn">Use GitHub to Sign In</span></div>
+        </div>
+        <div class="form_wrapper" id="form_wrapper">
+          <div class="form_container">
+            <div class="title_container">
+              <h2>Sign Up</h2>
+            </div>
+            <div class="row clearfix">
+              <div class="form">
+                <div>
+                  <div class="input_field"> <span><i data-feather="mail"></i></span>
+                    <input type="email" id="email" placeholder="Email" required />
+                  </div>
+                  <div class="input_field"> <span><i data-feather="lock"></i></span>
+                    <input type="password" id="userPassword" placeholder="Password" required />
+                  </div>
+                  <div class="input_field"> <span><i data-feather="lock"></i></span>
+                    <input type="password" id="confirmPassword" placeholder="Re-type Password" required />
+                  </div>
+                  <div class="row clearfix">
+                    <div class="col_half">
+                      <div class="input_field"> <span><i data-feather="user"></i></span>
+                        <input type="text" id="firstName" placeholder="First Name" />
+                      </div>
+                    </div>
+                    <div class="col_half">
+                      <div class="input_field"> <span><i data-feather="user"></i></span>
+                        <input type="text" id="userName" placeholder="Username" required />
+                      </div>
+                    </div>
+                  </div>
+                      <div class="input_field radio_option">
+                      <input type="radio" id="rd1">
+                      <label for="rd1">Male</label>
+                      <input type="radio" id="rd2">
+                      <label for="rd2">Female</label>
+                      </div>
+                      <div class="input_field select_option" id="input_field">
+                        <select>
+                          <option>Select a country</option>
+                          <option>Ukraine</option>
+                          <option>USA</option>
+                        </select>
+                        <div class="select_arrow"></div>
+                      </div>
+                  <button class="button" id="register">Register</button>
+                  <span class="signInBtn" id="signInBtn">Sign In</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sign Up Page wrapper end -->
 
   <!-- js link -->
   <script src="public/js/main.js"></script>
@@ -546,7 +667,10 @@
   <script src="public/js/parseGit.js"></script>
 
   <!-- login to admin panel -->
-  <script src="public/js/login.js"></script>
+  <script src="public/js/auth.js"></script>
+
+  <!-- registration js link -->
+  <script src="public/js/register.js"></script>
 </body>
 
 </html>

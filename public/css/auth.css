@@ -20,9 +20,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -32,7 +30,7 @@
   background: linear-gradient(calc(var(--angle) * 1deg), var(--bg-one) calc(var(--stop) * 1%), var(--bg-two) calc(var(--stop) * 1%));
 }
 
-form {
+.wrapper__auth-form form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
@@ -42,7 +40,7 @@ form {
   position: relative;
 }
 
-[type='password'] {
+.wrapper__auth-form [type='password'] {
   padding: 12px 20px;
   font-size: 1rem;
   border-width: calc(var(--border-width) * 1px);
@@ -56,19 +54,19 @@ form {
   transition: border-color calc(var(--transition, 0.2) * 1s) ease;
 }
 
-[type='password']:valid {
+.wrapper__auth-form [type='password']:valid {
   --accent: #5f0;
 }
 
-[type='password']:invalid {
-  --accent: rgba(255,43,0,0.5);
+.wrapper__auth-form [type='password']:invalid {
+  --accent: rgba(255, 43, 0, 0.5);
 }
 
-[type='password']:placeholder-shown {
+.wrapper__auth-form [type='password']:placeholder-shown {
   --accent: #fff;
 }
 
-.wrapper__admin__panel {
+.wrapper__auth-form .wrapper__admin__panel {
   -webkit-transform: scale(var(--scale));
           transform: scale(var(--scale));
   -webkit-transition: -webkit-transform calc(var(--transition, 0.2) * 1s) ease;
@@ -77,8 +75,8 @@ form {
   transition: transform calc(var(--transition, 0.2) * 1s) ease, -webkit-transform calc(var(--transition, 0.2) * 1s) ease;
 }
 
-[for='password'],
-#login {
+.wrapper__auth-form [for='password'],
+.wrapper__auth-form #login {
   height: 0;
   width: 0;
   -webkit-transform: scale(0);
@@ -86,7 +84,7 @@ form {
   position: absolute;
 }
 
-.logout-button {
+.wrapper__auth-form .logout-button {
   --size: 52;
   --lightness: 45;
   height: calc(var(--size) * 1px);
@@ -100,15 +98,15 @@ form {
   cursor: pointer;
 }
 
-.logout-button:hover {
+.wrapper__auth-form .logout-button:hover {
   --lightness: 30;
 }
 
-.logout-button:active {
+.wrapper__auth-form .logout-button:active {
   --lightness: 20;
 }
 
-.login-button {
+.wrapper__auth-form .login-button {
   --size: 52;
   --lightness: 45;
   -webkit-box-align: center;
@@ -133,33 +131,33 @@ form {
   transition: background calc(var(--transition, 0.2) * 1s) ease;
 }
 
-.login-button svg {
+.wrapper__auth-form .login-button svg {
   -webkit-transform: translate(50%, 0);
           transform: translate(50%, 0);
 }
 
-.login-button * {
+.wrapper__auth-form .login-button * {
   cursor: pointer;
 }
 
-.login-button:hover {
+.wrapper__auth-form .login-button:hover {
   --lightness: 30;
 }
 
-.login-button:active {
+.wrapper__auth-form .login-button:active {
   --lightness: 20;
 }
 
-.login-button svg {
+.wrapper__auth-form .login-button svg {
   height: 24px;
   width: 24px;
 }
 
-.login-button svg path {
+.wrapper__auth-form .login-button svg path {
   fill: #fff;
 }
 
-.padlock {
+.wrapper__auth-form .padlock {
   --hue: 65;
   --color: #ffd500;
   --color-one: #ffa200;
@@ -171,7 +169,7 @@ form {
   position: relative;
 }
 
-.padlock__body {
+.wrapper__auth-form .padlock__body {
   border: 8px solid #000;
   border-radius: 20px;
   position: absolute;
@@ -186,7 +184,7 @@ form {
           box-shadow: -30px 0 0px 0px var(--color-one) inset, 10px 0 0px 0px var(--color-two) inset;
 }
 
-.padlock__face {
+.wrapper__auth-form .padlock__face {
   height: 25%;
   width: 40%;
   position: absolute;
@@ -196,7 +194,7 @@ form {
           transform: translate(-50%, 0);
 }
 
-.padlock__eye {
+.wrapper__auth-form .padlock__eye {
   position: absolute;
   height: 15px;
   width: 15px;
@@ -207,7 +205,7 @@ form {
           animation: blink 4s infinite linear;
 }
 
-.padlock__eye:after {
+.wrapper__auth-form .padlock__eye:after {
   content: '';
   height: 25%;
   width: 25%;
@@ -220,37 +218,45 @@ form {
           transform: translate(-100%, -100%);
 }
 
-.padlock__eye--left {
+.wrapper__auth-form .padlock__eye--left {
   left: 0;
 }
 
-.padlock__eye--right {
+.wrapper__auth-form .padlock__eye--right {
   right: 0;
 }
 
 @-webkit-keyframes blink {
-  0%, 24%, 27%, 100% {
+  0%,
+  24%,
+  27%,
+  100% {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
   }
-  25%, 26% {
+  25%,
+  26% {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
   }
 }
 
 @keyframes blink {
-  0%, 24%, 27%, 100% {
+  0%,
+  24%,
+  27%,
+  100% {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
   }
-  25%, 26% {
+  25%,
+  26% {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
   }
 }
 
-.padlock__mouth {
+.wrapper__auth-form .padlock__mouth {
   width: 25%;
   height: 10px;
   position: absolute;
@@ -260,7 +266,7 @@ form {
           transform: translate(-50%, 0);
 }
 
-.padlock__mouth--one {
+.wrapper__auth-form .padlock__mouth--one {
   background: #000;
   height: 5px;
   width: 40%;
@@ -269,8 +275,8 @@ form {
   display: block;
 }
 
-.padlock__mouth--two,
-.padlock__mouth--three {
+.wrapper__auth-form .padlock__mouth--two,
+.wrapper__auth-form .padlock__mouth--three {
   height: 24px;
   width: 20px;
   border-radius: 50%;
@@ -282,8 +288,8 @@ form {
   overflow: hidden;
 }
 
-.padlock__mouth--two:before,
-.padlock__mouth--three:before {
+.wrapper__auth-form .padlock__mouth--two:before,
+.wrapper__auth-form .padlock__mouth--three:before {
   content: '';
   height: 100%;
   width: 100%;
@@ -294,11 +300,11 @@ form {
   border: 4px solid #000;
 }
 
-.padlock__mouth--three {
+.wrapper__auth-form .padlock__mouth--three {
   background: #000;
 }
 
-.padlock__mouth--three:after {
+.wrapper__auth-form .padlock__mouth--three:after {
   content: '';
   position: absolute;
   height: 6px;
@@ -309,7 +315,7 @@ form {
   background: #f00;
 }
 
-.padlock__hook {
+.wrapper__auth-form .padlock__hook {
   --delay: 1;
   --clip: 40;
   width: 50%;
@@ -327,7 +333,7 @@ form {
   transition: transform calc(var(--transition, 0.2) * 1s) calc(((var(--transition, 0.2) * 1.5) * var(--delay, 0)) * 1s) cubic-bezier(0.78, 0.16, 0.64, 1.8), -webkit-transform calc(var(--transition, 0.2) * 1s) calc(((var(--transition, 0.2) * 1.5) * var(--delay, 0)) * 1s) cubic-bezier(0.78, 0.16, 0.64, 1.8);
 }
 
-.padlock__hook:after {
+.wrapper__auth-form .padlock__hook:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -343,7 +349,7 @@ form {
   clip-path: polygon(0 0, 100% 0, 100% calc(var(--clip) * 1%), 50% calc(var(--clip) * 1%), 50% 100%, 0 100%);
 }
 
-.padlock__hook > div {
+.wrapper__auth-form .padlock__hook > div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -351,7 +357,7 @@ form {
           transform: translate(-50%, -50%);
 }
 
-.padlock__hook > div:nth-of-type(1) {
+.wrapper__auth-form .padlock__hook > div:nth-of-type(1) {
   width: 100%;
   height: 100%;
   border: 36px solid #000;
@@ -360,7 +366,7 @@ form {
   clip-path: polygon(0 0, 100% 0, 100% calc(calc(var(--clip) * 1%) + 8px), 50% calc(calc(var(--clip) * 1%) + 8px), 50% 100%, 0 100%);
 }
 
-.padlock__hook > div:nth-of-type(2) {
+.wrapper__auth-form .padlock__hook > div:nth-of-type(2) {
   width: calc(100% - 16px);
   height: calc(100% - 16px);
   border: 20px solid #bfbfbf;
@@ -369,7 +375,7 @@ form {
   clip-path: polygon(0 0, 100% 0, 100% calc(var(--clip) * 1%), 50% calc(var(--clip) * 1%), 50% 100%, 0 100%);
 }
 
-.logout-message {
+.wrapper__auth-form .logout-message {
   display: block;
   width: 100%;
   border-radius: calc(var(--border-radius) * 1px);
@@ -379,56 +385,56 @@ form {
   font-weight: bold;
 }
 
-#login:checked ~ .wrapper__admin__panel {
+.wrapper__auth-form #login:checked ~ .wrapper__admin__panel {
   --scale: 1;
 }
 
-[type='password']:valid ~ #login,
-[type='password']:valid ~ [for='login'] {
+.wrapper__auth-form [type='password']:valid ~ #login,
+.wrapper__auth-form [type='password']:valid ~ [for='login'] {
   visibility: visible;
 }
 
-[type='password']:valid ~ #login:hover ~ .padlock .padlock__mouth--one,
-[type='password']:valid ~ [for='login']:hover ~ .padlock .padlock__mouth--one,
-[type='password']:valid ~ #login:hover ~ .padlock .padlock__mouth--two,
-[type='password']:valid ~ [for='login']:hover ~ .padlock .padlock__mouth--two {
+.wrapper__auth-form [type='password']:valid ~ #login:hover ~ .padlock .padlock__mouth--one,
+.wrapper__auth-form [type='password']:valid ~ [for='login']:hover ~ .padlock .padlock__mouth--one,
+.wrapper__auth-form [type='password']:valid ~ #login:hover ~ .padlock .padlock__mouth--two,
+.wrapper__auth-form [type='password']:valid ~ [for='login']:hover ~ .padlock .padlock__mouth--two {
   display: none;
 }
 
-[type='password']:valid ~ #login:hover ~ .padlock .padlock__mouth--three,
-[type='password']:valid ~ [for='login']:hover ~ .padlock .padlock__mouth--three {
+.wrapper__auth-form [type='password']:valid ~ #login:hover ~ .padlock .padlock__mouth--three,
+.wrapper__auth-form [type='password']:valid ~ [for='login']:hover ~ .padlock .padlock__mouth--three {
   display: block;
 }
 
-[type='password']:valid ~ .padlock .padlock__mouth--one {
+.wrapper__auth-form [type='password']:valid ~ .padlock .padlock__mouth--one {
   display: none;
 }
 
-[type='password']:valid ~ .padlock .padlock__mouth--two {
+.wrapper__auth-form [type='password']:valid ~ .padlock .padlock__mouth--two {
   display: block;
 }
 
-[type='password']:valid ~ .padlock .padlock__hook {
+.wrapper__auth-form [type='password']:valid ~ .padlock .padlock__hook {
   --pos: 60;
   --delay: 0;
 }
 
-[type='password']:placeholder-shown ~ .wrapper__admin__panel {
+.wrapper__auth-form [type='password']:placeholder-shown ~ .wrapper__admin__panel {
   -webkit-transition: -webkit-transform 0s 0s ease;
   transition: -webkit-transform 0s 0s ease;
   transition: transform 0s 0s ease;
   transition: transform 0s 0s ease, -webkit-transform 0s 0s ease;
 }
 
-.app:focus-within ~ .logout-message {
+.wrapper__auth-form .app:focus-within ~ .logout-message {
   visibility: visible;
   -ms-grid-row: 3;
   grid-row: 3;
 }
 
-#login,
-[for='login'],
-.logout-message {
+.wrapper__auth-form #login,
+.wrapper__auth-form [for='login'],
+.wrapper__auth-form .logout-message {
   visibility: hidden;
 }
 /*# sourceMappingURL=auth.css.map */

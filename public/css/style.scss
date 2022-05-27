@@ -290,6 +290,7 @@
               border-radius: 15px;
               background-size: cover;
               background-position: center;
+              box-shadow: 0 0 3px #333;
             }
 
             .github__name {
@@ -323,6 +324,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-flow: column;
 
             svg {
               width: 14px; height: 7.67px;
