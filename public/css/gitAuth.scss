@@ -11,6 +11,18 @@
   padding: 20px;
   border-radius: 10px;
 
+  @media (max-width: 737px) {
+    width: 70%; left: 10%;
+  }
+
+  @media (max-width: 313px) {
+    width: 90%; left: 0;
+  }
+
+  @media (max-height: 588px) {
+    height: 70%; top: 5%;
+  }
+
   .cross {
     fill: #FF1731;
     cursor: pointer;

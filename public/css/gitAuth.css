@@ -19,6 +19,27 @@
   border-radius: 10px;
 }
 
+@media (max-width: 737px) {
+  .git__auth {
+    width: 70%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 313px) {
+  .git__auth {
+    width: 90%;
+    left: 0;
+  }
+}
+
+@media (max-height: 588px) {
+  .git__auth {
+    height: 70%;
+    top: 5%;
+  }
+}
+
 .git__auth .cross {
   fill: #FF1731;
   cursor: pointer;
