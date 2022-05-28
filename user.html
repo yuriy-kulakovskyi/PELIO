@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Info</title>
+  <!-- Shortcut icon -->
+  <link rel="shortcut icon" href="public/img/logo.png">
+
+  <!-- User css styles -->
+  <link rel="stylesheet" href="public/css/user.css">
+
+  <!-- font awesome link -->
+  <script src="https://kit.fontawesome.com/657ceb94fb.js" crossorigin="anonymous"></script>
+
+  <!-- jquery link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <div class="outer-div">
+    <div class="inner-div">
+      <div class="front">
+        <div class="front__bkg-photo"></div>
+        <div class="front__face-photo" id="avatar"></div>
+        <div class="front__text">
+          <h3 class="front__text-header" id="user__firstname"></h3>
+          <p class="front__text-para"><i class="fas fa-map-marker-alt front-icons"></i><span id="location"></span></p>
+
+          <span class="front__text-hover">Hover to Know More</span>
+        </div>
+      </div>
+      <div class="back">
+        <div class="info-wrapper">
+          <h3 class="username" id="username"></h3>
+          <h3 class="sex" id="sex"></h3>
+          <h3 class="bio" id="bio"></h3>
+          <h3 class="country" id="country"></h3>
+          <h3 class="email" id="email"></h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="public/js/user.js"></script>
+</body>
+
+</html>

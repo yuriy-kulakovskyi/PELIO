@@ -2,7 +2,6 @@ let nickname1 = localStorage.getItem('nickname');
 let username = localStorage.getItem('username');
 let name = localStorage.getItem('name');
 
-console.log(localStorage.getItem("typednick"));
 
 $("#gitSignIn").click(() => {
   $("#git__auth").css("display", 'flex');
@@ -22,6 +21,17 @@ $("#gitSignIn").click(() => {
 
       $("#git__auth").css("display", 'none');
       $("#authPage").css("filter", 'blur(0)');
+
+      fetch('https://api.github.com/users/' + nickname)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        $('#github__image').css('background-image', 'url('+ data.avatar_url +')');
+        $("#name__username").text(data.name);
+        $("#name__nickname").text(data.login);
+        $("#name").text(data.name);
+      })
     }
   });
 });
@@ -44,7 +54,9 @@ if (localStorage.getItem("gitClick") === 'true') {
 
     localStorage.setItem("ava_url", data.avatar_url);
     localStorage.setItem("userName", data.name);
-    localStorage.setItem("firstname", data.login);
+    localStorage.setItem("firstName", data.login);
+    localStorage.setItem("location", data.location);
+    localStorage.setItem("bio", data.bio);
     
     $("#authPage").css("display", 'none');
     $("#signIn").css("display", 'none');
