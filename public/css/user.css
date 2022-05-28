@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url("https://images.unsplash.com/photo-1447433589675-4aaa569f3e05?ixlib=rb-0.3.5&s=4222852e25e0f57d9485f7889957e99a&auto=format&fit=crop&w=2000&q=80");
+  background-size: cover;
+  background: #ccc;
+  background-position: 0 50%;
+  background: #DEB493;
+}
+
+.background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+
+.outer-div,
+.inner-div {
+  height: 450px;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.outer-div {
+  -webkit-perspective: 900px;
+          perspective: 900px;
+  -webkit-perspective-origin: 50% calc(50% - 18em);
+          perspective-origin: 50% calc(50% - 18em);
+}
+
+.inner-div {
+  margin: 0 auto;
+  border-radius: 5px;
+  font-weight: 400;
+  color: #071011;
+  font-size: 1rem;
+  text-align: center;
+  -webkit-transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
+  transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  /*&:hover .front__face-photo,
+  &:hover .front__footer {
+    opacity: 1;
+  }*/
+}
+
+.inner-div:hover .social-icon {
+  opacity: 1;
+  top: 0;
+}
+
+.outer-div:hover .inner-div {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front {
+  cursor: pointer;
+  height: 100%;
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.front__bkg-photo {
+  position: relative;
+  height: 150px;
+  width: 300px;
+  background: url("https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88672068827eaeeab540f584b883cc66&auto=format&fit=crop&w=1164&q=80") no-repeat;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.front__bkg-photo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.front__face-photo {
+  position: relative;
+  top: -60px;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  /* backface-visibility: hidden;
+  transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
+  z-index: 3;*/
+}
+
+.front__text {
+  position: relative;
+  top: -55px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front__text .front__text-header {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.front__text .front__text-para {
+  position: relative;
+  top: -5px;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.front__text .front-icons {
+  position: relative;
+  top: 0;
+  font-size: 14px;
+  margin-right: 6px;
+  color: gray;
+}
+
+.front__text .front__text-hover {
+  position: relative;
+  top: 10px;
+  font-size: 10px;
+  color: tomato;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  border: 2px solid tomato;
+  padding: 8px 15px;
+  border-radius: 30px;
+  background: tomato;
+  color: #fff;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #071011;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+}
+
+.info-wrapper {
+  font-size: 36px;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.info-wrapper h3 {
+  position: relative;
+  top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #fff;
+  -webkit-transition: all 0.4s cubic-bezier(0.3, 0.7, 0.1, 1.9);
+  transition: all 0.4s cubic-bezier(0.3, 0.7, 0.1, 1.9);
+  font-size: 15px;
+  text-align: left;
+}
+
+.info-wrapper h3:nth-child(1) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.info-wrapper h3:nth-child(2) {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.info-wrapper h3:nth-child(3) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.info-wrapper h3:nth-child(4) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+/*# sourceMappingURL=user.css.map */

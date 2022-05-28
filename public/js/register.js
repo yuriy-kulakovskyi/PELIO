@@ -10,6 +10,7 @@ $("#profile__switch svg").click(() => {
 });
 
 $("#switch__menu").click(() => {
+  $(this).css('display', 'none');
   $("#admin__panel").css("display", 'none');
   $("#signIn").css("display", 'flex');
   $("#authPage").css("display", 'flex');
@@ -103,6 +104,13 @@ $("#register").click(() => {
       localStorage.setItem("loggined", 'true');
       localStorage.setItem("firstName", user.firstname);
       localStorage.setItem("userName", user.username);
+      localStorage.setItem("sex", user.sex);
+      localStorage.setItem("email", user.email);
+      localStorage.setItem("location", user.country);
+
+      $("#name__username").text(user.username);
+      $("#name__nickname").text(user.firstname);
+      $("#name").text(user.firstname);
     } else {
       alert("confirm password value");
       $("#userPassword").val() = '';
